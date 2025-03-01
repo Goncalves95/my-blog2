@@ -19,7 +19,9 @@ export default [
       '**/*.mjs',
     ],
     // Override or add rules here
-    rules: {},
+    rules: {
+      // Add any specific rules for your project here
+    },
   },
   ...nx.configs['flat/angular'],
   ...nx.configs['flat/angular-template'],
@@ -42,11 +44,14 @@ export default [
           style: 'kebab-case',
         },
       ],
+      // Add any additional rules as needed
     },
   },
   {
     files: ['**/*.html'],
     // Override or add rules here
-    rules: {},
+    rules: {
+      // Add any specific rules for HTML files here
+    },
   },
 ];
