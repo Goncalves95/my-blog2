@@ -1,0 +1,3 @@
+<button (click)="checkAge()">Check Age</button>
+<p *ngIf="canAccessVideos()">You can access the videos.</p>
+<p *ngIf="age !== null && !canAccessVideos()">You must be 18 or older to access the videos.</p>
